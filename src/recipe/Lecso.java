@@ -21,7 +21,7 @@ public class Lecso {
     PaprikaPowder paprikaPowder = new PaprikaPowder("paprikaPowder", 5, "red", true, "Kalocsa");
 
     Oil oil = new Oil("oil", 1, "olive, extra virgin", "Bertolli");
-    Ingredients water = new Ingredients("water", 1, "liter", "liquid");
+    Water water = new Water("water", 1, "tapped", "none");
 
     Sausage sausage = new Sausage("sausage", 1, "Gyulai", true, true);
 

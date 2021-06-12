@@ -1,6 +1,5 @@
 package tools;
 
-import ingredients.Ingredients;
 import ingredients.rawmaterial.Tomato;
 
 public class Stove {
@@ -8,6 +7,7 @@ public class Stove {
     private boolean isGas;
     private int cookTop;
     private String unit;
+    final String state = "cooked";
 
     public Stove(String name, boolean isGas, int cookTop, String unit) {
         this.name = name;
@@ -48,12 +48,7 @@ public class Stove {
         this.unit = unit;
     }
 
-    public void cook(Ingredients[] array) {
-        for (int i = 0; i < array.length; i++) {
-            String previousState = array[i].getState();
-            array[i].setState(previousState + " and cooked");
-        }
-    }
+    public String cook() { return state; }
 
 
     public void concassé(Tomato item, Knife knife) {
