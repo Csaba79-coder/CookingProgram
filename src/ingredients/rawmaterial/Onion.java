@@ -1,14 +1,13 @@
 package ingredients.rawmaterial;
 
-import ingredients.Ingredients;
 
-public class Onion extends Ingredients {
+public class Onion extends RawMaterial {
 
     private String color;
     private String type;
 
     public Onion(String name, double amount, String color, String type) {
-        super(name, amount, "pieces", "whole");
+        super(name, amount, "pieces", "whole", true);
         this.color = color;
         this.type = type;
     }

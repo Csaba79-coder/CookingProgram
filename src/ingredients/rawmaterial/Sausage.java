@@ -1,15 +1,14 @@
 package ingredients.rawmaterial;
 
-import ingredients.Ingredients;
 
-public class Sausage extends Ingredients {
+public class Sausage extends RawMaterial {
 
     private String type;
     private boolean isSmoked;
     private boolean isHot;
 
     public Sausage(String name, double amount, String type, boolean isSmoked, boolean isHot) {
-        super(name, amount, "pair", "whole");
+        super(name, amount, "pair", "whole", true);
         this.type = type;
         this.isSmoked = isSmoked;
         this.isHot = isHot;

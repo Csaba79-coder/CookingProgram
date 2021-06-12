@@ -1,15 +1,14 @@
 package ingredients.rawmaterial;
 
-import ingredients.Ingredients;
 
-public class Paprika extends Ingredients {
+public class Paprika extends RawMaterial {
 
     private String color;
     private boolean isHot;
     private String type;
 
     public Paprika(String name, double amount, String color, boolean isHot, String type) {
-        super(name, amount, "kg", "whole");
+        super(name, amount, "kg", "whole", true);
         this.color = color;
         this.isHot = isHot;
         this.type = type;

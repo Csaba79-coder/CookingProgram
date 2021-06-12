@@ -5,8 +5,8 @@ public class Pepper extends Spices {
     private String color;
 
 
-    public Pepper(String name, double amount, String state, String color) {
-        super(name, amount, state);
+    public Pepper(String name, double amount, String color) {
+        super(name, amount);
         this.color = color;
     }
 

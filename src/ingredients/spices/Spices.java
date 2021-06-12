@@ -6,8 +6,8 @@ public class Spices extends Ingredients {
 
     private boolean needsToBeClean = false;
 
-    public Spices(String name, double amount, String state) {
-        super(name, amount, "gram", state);
+    public Spices(String name, double amount) {
+        super(name, amount, "gram", "powder");
     }
 
     public boolean isNeedsToBeClean() {

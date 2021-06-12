@@ -5,6 +5,7 @@ public class Egg extends RawMaterial {
     private String type;
     private String size;
     private boolean isUV = true;
+    // private String[] activities = {"washing", "break up", "cook"};
 
     public Egg(String name, double amount, String type, String size) {
         super(name, amount, "pieces", "whole", true);
@@ -35,4 +36,5 @@ public class Egg extends RawMaterial {
     public void setUV(boolean UV) {
         isUV = UV;
     }
+
 }

@@ -1,14 +1,12 @@
 package ingredients.rawmaterial;
 
-import ingredients.Ingredients;
-
-public class Oil extends Ingredients {
+public class Oil extends RawMaterial {
 
     private String type;
     private String brand;
 
     public Oil(String name, double amount, String type, String brand) {
-        super(name, amount, "dl", "liquid");
+        super(name, amount, "dl", "liquid", false);
         this.type = type;
         this.brand = brand;
     }

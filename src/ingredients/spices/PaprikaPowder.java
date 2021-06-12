@@ -7,8 +7,8 @@ public class PaprikaPowder extends Spices {
     private boolean isHot;
     private String type;
 
-    public PaprikaPowder(String name, double amount, String state, String color, boolean isHot, String type) {
-        super(name, amount, state);
+    public PaprikaPowder(String name, double amount, String color, boolean isHot, String type) {
+        super(name, amount);
         this.color = color;
         this.isHot = isHot;
         this.type = type;
