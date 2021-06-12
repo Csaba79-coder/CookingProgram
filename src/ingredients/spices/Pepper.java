@@ -1,13 +1,12 @@
 package ingredients.spices;
 
-import ingredients.Ingredients;
 
-public class Pepper extends Ingredients {
+public class Pepper extends Spices {
     private String color;
 
 
-    public Pepper(String name, double amount, String unit, String state, String color) {
-        super(name, amount, unit, state);
+    public Pepper(String name, double amount, String state, String color) {
+        super(name, amount, state);
         this.color = color;
     }
 

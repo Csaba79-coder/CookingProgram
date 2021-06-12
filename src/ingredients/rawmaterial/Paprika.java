@@ -8,8 +8,8 @@ public class Paprika extends Ingredients {
     private boolean isHot;
     private String type;
 
-    public Paprika(String name, double amount, String unit, String state, String color, boolean isHot, String type) {
-        super(name, amount, unit, state);
+    public Paprika(String name, double amount, String color, boolean isHot, String type) {
+        super(name, amount, "kg", "whole");
         this.color = color;
         this.isHot = isHot;
         this.type = type;

@@ -6,8 +6,8 @@ public class Tomato extends Ingredients {
 
     private String color;
 
-    public Tomato(String name, double amount, String unit, String state, String color) {
-        super(name, amount, unit, state);
+    public Tomato(String name, double amount, String color) {
+        super(name, amount, "kg", "whole");
         this.color = color;
     }
 

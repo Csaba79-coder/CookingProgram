@@ -1,13 +1,12 @@
 package ingredients.spices;
 
-import ingredients.Ingredients;
 
-public class Salt extends Ingredients {
+public class Salt extends Spices {
     private String type;
     private boolean isSeaSalt;
 
-    public Salt(String name, double amount, String unit, String state, String type, boolean isSeaSalt) {
-        super(name, amount, unit, state);
+    public Salt(String name, double amount, String state, String type, boolean isSeaSalt) {
+        super(name, amount, state);
         this.type = type;
         this.isSeaSalt = isSeaSalt;
     }

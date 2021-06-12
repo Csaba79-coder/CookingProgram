@@ -8,8 +8,8 @@ public class Sausage extends Ingredients {
     private boolean isSmoked;
     private boolean isHot;
 
-    public Sausage(String name, double amount, String unit, String state, String type, boolean isSmoked, boolean isHot) {
-        super(name, amount, unit, state);
+    public Sausage(String name, double amount, String type, boolean isSmoked, boolean isHot) {
+        super(name, amount, "pair", "whole");
         this.type = type;
         this.isSmoked = isSmoked;
         this.isHot = isHot;

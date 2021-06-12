@@ -7,8 +7,8 @@ public class Onion extends Ingredients {
     private String color;
     private String type;
 
-    public Onion(String name, double amount, String unit, String state, String color, String type) {
-        super(name, amount, unit, state);
+    public Onion(String name, double amount, String color, String type) {
+        super(name, amount, "pieces", "whole");
         this.color = color;
         this.type = type;
     }

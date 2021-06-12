@@ -1,17 +1,15 @@
 package ingredients.rawmaterial;
 
-import ingredients.Ingredients;
 
-public class Egg extends Ingredients {
+public class Egg extends RawMaterial {
     private String type;
     private String size;
-    private boolean isUV;
+    private boolean isUV = true;
 
-    public Egg(String name, double amount, String unit, String state, String type, String size, boolean isUV) {
-        super(name, amount, unit, state);
+    public Egg(String name, double amount, String type, String size) {
+        super(name, amount, "pieces", "whole", true);
         this.type = type;
         this.size = size;
-        this.isUV = isUV;
     }
 
     public String getType() {

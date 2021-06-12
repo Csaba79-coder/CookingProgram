@@ -1,15 +1,14 @@
 package ingredients.spices;
 
-import ingredients.Ingredients;
 
-public class PaprikaPowder extends Ingredients {
+public class PaprikaPowder extends Spices {
 
     private String color;
     private boolean isHot;
     private String type;
 
-    public PaprikaPowder(String name, double amount, String unit, String state, String color, boolean isHot, String type) {
-        super(name, amount, unit, state);
+    public PaprikaPowder(String name, double amount, String state, String color, boolean isHot, String type) {
+        super(name, amount, state);
         this.color = color;
         this.isHot = isHot;
         this.type = type;
