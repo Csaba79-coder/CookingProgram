@@ -7,10 +7,10 @@ public class Ingredients {
     protected double amount;
     protected String unit;
     protected String state;
-    public String[] activities; // {"washing", "break up", "cook"}
+    protected String[] activities; // {"washing", "break up", "cook"}
 
 
-    public Ingredients(String name, double amount, String unit, String state, String[] activities) {
+    public Ingredients(String name, double amount, String unit, String state) {
         this.name = name;
         this.amount = amount;
         this.unit = unit;

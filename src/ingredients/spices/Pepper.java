@@ -8,6 +8,7 @@ public class Pepper extends Spices {
     public Pepper(String name, double amount, String color) {
         super(name, amount);
         this.color = color;
+        this.activities = new String[]{"uncooked"};
     }
 
     public String getColor() {

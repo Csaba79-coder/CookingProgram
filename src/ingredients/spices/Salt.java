@@ -9,6 +9,7 @@ public class Salt extends Spices {
         super(name, amount);
         this.type = type;
         this.isSeaSalt = isSeaSalt;
+        this.activities = new String[]{"uncooked"};
     }
 
     public String getType() {

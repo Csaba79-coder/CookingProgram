@@ -7,9 +7,10 @@ public class Onion extends RawMaterial {
     private String type;
 
     public Onion(String name, double amount, String color, String type) {
-        super(name, amount, "pieces", "whole", true);
+        super(name, amount, "pieces", "whole", true, false);
         this.color = color;
         this.type = type;
+        this.activities = new String[]{"uncleaned", "uncut", "uncooked"};
     }
 
     public String getColor() {

@@ -7,11 +7,12 @@ public class Egg extends RawMaterial {
     private boolean isUV = true;
 
 
+
     public Egg(String name, double amount, String type, String size) {
-        super(name, amount, "pieces", "whole", true);
+        super(name, amount, "pieces", "whole", true, false);
         this.type = type;
         this.size = size;
-        this.activities = new String[]{"clean", "break", "cook"};
+        this.activities = new String[]{"uncleaned", "unbroken", "uncooked"};
     }
 
     public String getType() {

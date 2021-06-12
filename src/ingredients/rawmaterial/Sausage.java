@@ -8,10 +8,11 @@ public class Sausage extends RawMaterial {
     private boolean isHot;
 
     public Sausage(String name, double amount, String type, boolean isSmoked, boolean isHot) {
-        super(name, amount, "pair", "whole", true);
+        super(name, amount, "pair", "whole", true, false);
         this.type = type;
         this.isSmoked = isSmoked;
         this.isHot = isHot;
+        this.activities = new String[]{"uncleaned", "uncut", "uncooked"};
     }
 
     public String getType() {

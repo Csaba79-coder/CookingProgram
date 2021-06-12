@@ -7,8 +7,9 @@ public class Tomato extends RawMaterial {
 
 
     public Tomato(String name, double amount, String color) {
-        super(name, amount, "kg", "whole", true);
+        super(name, amount, "kg", "whole", true, false);
         this.color = color;
+        this.activities = new String[]{"uncleaned", "uncut", "uncooked"};
     }
 
     public String getColor() {

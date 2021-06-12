@@ -12,6 +12,7 @@ public class PaprikaPowder extends Spices {
         this.color = color;
         this.isHot = isHot;
         this.type = type;
+        this.activities = new String[]{"uncooked"};
     }
 
     public String getColor() {

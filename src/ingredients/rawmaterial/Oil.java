@@ -6,9 +6,10 @@ public class Oil extends RawMaterial {
     private String brand;
 
     public Oil(String name, double amount, String type, String brand) {
-        super(name, amount, "dl", "liquid", false);
+        super(name, amount, "dl", "liquid", false, true);
         this.type = type;
         this.brand = brand;
+        this.activities = new String[]{"cook"};
     }
 
     public String getType() {

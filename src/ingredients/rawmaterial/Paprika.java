@@ -8,10 +8,11 @@ public class Paprika extends RawMaterial {
     private String type;
 
     public Paprika(String name, double amount, String color, boolean isHot, String type) {
-        super(name, amount, "kg", "whole", true);
+        super(name, amount, "kg", "whole", true, false);
         this.color = color;
         this.isHot = isHot;
         this.type = type;
+        this.activities = new String[]{"uncleaned", "uncut", "uncooked"};
     }
 
 

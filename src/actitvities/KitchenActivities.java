@@ -27,12 +27,14 @@ public class KitchenActivities {
         }
     }
 
-    public boolean isNeedToBeClean(String[] activities) {
+    //         this.activities = new String[]{"uncleaned", "uncut", "uncooked"};
+
+    public static void cleanTheStuff(String[] activities, String activity) {
         for (int i = 0; i < activities.length; i++) {
-            if (activities[i] == "clean") {
-                return true;
+            if (activities[i] == activity) {
+                activities[i] = activity.substring(2);
+                System.out.println(activities[i]);
             }
         }
-        return false;
     }
 }
