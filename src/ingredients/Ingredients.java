@@ -7,13 +7,17 @@ public class Ingredients {
     protected double amount;
     protected String unit;
     protected String state;
+    public String[] activities; // {"washing", "break up", "cook"}
 
-    public Ingredients(String name, double amount, String unit, String state) {
+
+    public Ingredients(String name, double amount, String unit, String state, String[] activities) {
         this.name = name;
         this.amount = amount;
         this.unit = unit;
         this.state = state;
+
     }
+
 
     public String getName() {
         return name;
@@ -45,5 +49,10 @@ public class Ingredients {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+
+    public String[] getActivities() {
+        return activities;
     }
 }

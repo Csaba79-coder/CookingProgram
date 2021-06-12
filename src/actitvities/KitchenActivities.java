@@ -22,8 +22,17 @@ public class KitchenActivities {
     // isNeedsToBeClean() return true or false ...
 
     public void cleanIngredients() {
-        for (int i = 0; i < ingredients.length; i++) {
-            if ingredients[i].
+        for (Ingredients ingredient : ingredients) {
+            String[] activities = ingredient.getActivities();
         }
+    }
+
+    public boolean isNeedToBeClean(String[] activities) {
+        for (int i = 0; i < activities.length; i++) {
+            if (activities[i] == "clean") {
+                return true;
+            }
+        }
+        return false;
     }
 }

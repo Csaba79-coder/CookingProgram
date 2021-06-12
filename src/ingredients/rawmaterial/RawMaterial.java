@@ -8,7 +8,7 @@ public class RawMaterial extends Ingredients {
     private boolean isCut = false;
 
     public RawMaterial(String name, double amount, String unit, String state, boolean needsToBeClean) {
-        super(name, amount, unit, state);
+        super(name, amount, unit, state, new String[]{"not ready"});
         this.needsToBeClean = needsToBeClean;
     }
 
